@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[SELECT ${1:vars} FROM ${2:table} ${3:WHERE ${4:cond}} ${5:ORDER BY ${6:fields}} ${7:LIMIT ${8:limit_of}};
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>select</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.sql</scope>
+</snippet>

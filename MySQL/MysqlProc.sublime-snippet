@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[DELIMITER \$\$
+
+DROP PROCEDURE IF EXISTS `${1:schema}`.`${2:name}` \$\$
+CREATE DEFINER=`${3:user}`@`${4:server}` PROCEDURE `${2:name}`(${5:params})
+BEGIN
+    ${6:code}
+END \$\$
+
+DELIMITER ;
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>proc</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.sql</scope>
+</snippet>
