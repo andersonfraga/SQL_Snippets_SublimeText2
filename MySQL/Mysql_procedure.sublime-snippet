@@ -1,10 +1,12 @@
 <snippet>
     <content><![CDATA[DELIMITER \$\$
 
-DROP PROCEDURE IF EXISTS `${1:schema}`.`${2:name}` \$\$
-CREATE DEFINER=`${3:user}`@`${4:server}` PROCEDURE `${2:name}`(${5:params})
+DROP ${1:PROCEDURE} IF EXISTS `${2:schema}`.`${3:name}` \$\$
+CREATE DEFINER=`${4:user}`@`${5:server}` ${1:PROCEDURE} `${2:schema}`.`${3:name}`(${6:params}) ${7:RETURNS ${8:return}} DETERMINISTIC
 BEGIN
-    ${6:code}
+    ${9:code}
+
+    ${10:RETURN ${11:returned}};
 END \$\$
 
 DELIMITER ;
